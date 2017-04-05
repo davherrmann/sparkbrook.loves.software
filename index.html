@@ -24,25 +24,29 @@
       }
 
       body {
-        background-color: #FFE5E5;
         font-family: "SF Mono", "Monaco", "Inconsolata", "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace;
         font-size: 16px;
       }
 
       h1 {
         font-size: 3em;
+        margin-bottom: 1rem;
       }
 
       h2 {
         font-size: 1.5em;
+        margin-bottom: 1rem;
       }
 
       .primary {
         background-color: #BF443A;
+        border-color: #BF443A;
         color: #FFE5E5;
       }
 
       .secondary {
+        background-color: #FFE5E5;
+        border-color: #FFE5E5;
         color: #BF443A;
       }
 
@@ -51,23 +55,50 @@
         position: relative;
       }
 
-      .piece-heading::after {
-        bottom: 0;
+      .piece::before {
         content: "";
         display: block;
-        border-right: 100vw solid #FFE5E5;
+        border-right-color: inherit;
+        border-right-style: solid;
+        border-right-width: calc(100vw - 4em);
+        border-left-color: inherit;
+        border-left-style: solid;
+        border-left-width: 4em;
+        border-bottom-color: inherit;
+        border-bottom-style: solid;
+        border-bottom-width: 1em;
         border-top: 5vw solid transparent;
         left: 0;
         position: absolute;
+        top: -5vw;
+      }
+
+      .piece-content {
+        line-height: 2;
       }
     </style>
   </head>
-  <body lang="en">
+  <body lang="en" class="primary">
     <div class="primary piece piece-heading">
       <h1>sparkbrook.<br>loves.<br>software.</h1>
     </div>
     <div class="secondary piece">
       <h2 class="secondary">We will help you to become a web developer!</h2>
+      <div class="piece-content">
+        <p>
+          So what is this course about?
+        </p>
+        <ol>
+          <li>create a website</li>
+          <li>build a web application</li>
+          <li>earn a Frontend Developer Certificate</li>
+        </ol>
+      </div>
+    </div>
+    <div class="primary piece">
+      <div class="piece-content">
+        (c) David Herrmann
+      </div>
     </div>
   </body>
 </html>
