@@ -60,12 +60,20 @@
       }
 
       .piece {
-        padding: 4em;
+        padding: 3em 1em;
         position: relative;
+      }
+
+      .piece > * {
+        max-width: 48rem;
+        margin: 0 auto;
       }
 
       .piece.secondary {
         box-shadow: 0 0 15px rgba(0,0,0,0.5);
+        display: block;
+        margin: 0 auto;
+        max-width: calc(48rem + 2em);
         z-index: 1;
       }
 
