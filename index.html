@@ -52,6 +52,10 @@
         color: #000;
       }
 
+      .quote {
+        font-family: "Book Antiqua", "Palatino", "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+      }
+
       .header, .footer {
         font-family: "SF Mono", "Monaco", "Inconsolata", "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace;
       }
@@ -85,6 +89,11 @@
         height: 10em;
         width: auto;
       }
+
+      .piece h2 + * {
+        margin-bottom: 1em;
+      }
+
     </style>
   </head>
   <body lang="en" class="primary">
@@ -95,11 +104,12 @@
     </div>
     <div class="secondary piece">
       <div class="piece-content">
-        <h2>I want to be a web developer.</h2>
+        <h2 class="quote">»I want to be a web developer.«</h2>
       </div>
     </div>
     <div class="secondary piece">
       <div class="piece-content">
+        <h2 class="quote">»What is this all about?«</h2>
         <p>
           So what is this course about?
         </p>
