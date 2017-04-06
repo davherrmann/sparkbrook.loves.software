@@ -60,14 +60,8 @@
 
       .piece {
         margin: 0 auto;
-        max-width: calc(48rem + 2em);
-        padding: 3em 1em;
-        position: relative;
-      }
-
-      .piece > * {
         max-width: 48rem;
-        margin: 0 auto;
+        position: relative;
       }
 
       .piece.secondary + .piece.secondary {
@@ -76,21 +70,28 @@
 
       .piece.secondary {
         box-shadow: 0 0 15px rgba(0,0,0,0.5);
-        padding: 1em;
+        line-height: 1.5;
+      }
+
+      .piece.primary .piece-content {
+        padding: 3em 1em;
       }
 
       .piece-content {
-        line-height: 2;
+        padding: 1em;
       }
+
     </style>
   </head>
   <body lang="en" class="primary">
     <div class="primary piece header">
-      <h1>sparkbrook.<br>loves.<br>software.</h1>
+      <div class="piece-content">
+        <h1>sparkbrook.<br>loves.<br>software.</h1>
+      </div>
     </div>
     <div class="secondary piece">
-      <h2 class="secondary">I want to be a web developer.</h2>
       <div class="piece-content">
+        <h2 class="secondary">I want to be a web developer.</h2>
         <p>
           So what is this course about?
         </p>
@@ -102,8 +103,8 @@
       </div>
     </div>
     <div class="secondary piece">
-      <h2 class="secondary">Who is "We"?</h2>
       <div class="piece-content">
+        <h2 class="secondary">Who is "We"?</h2>
         <p>
           So what is this course about?
         </p>
