@@ -37,12 +37,10 @@
 
       h1 {
         font-size: 3em;
-        margin-bottom: 1rem;
       }
 
       h2 {
         font-size: 1.5em;
-        margin-bottom: 1rem;
       }
 
       .primary {
@@ -59,6 +57,7 @@
       }
 
       .piece {
+        display: flex;
         margin: 0 auto;
         max-width: 48rem;
         position: relative;
@@ -78,9 +77,14 @@
       }
 
       .piece-content {
+        flex-grow: 1;
         padding: 1em;
       }
 
+      .piece > img {
+        height: 10em;
+        width: auto;
+      }
     </style>
   </head>
   <body lang="en" class="primary">
@@ -91,7 +95,11 @@
     </div>
     <div class="secondary piece">
       <div class="piece-content">
-        <h2 class="secondary">I want to be a web developer.</h2>
+        <h2>I want to be a web developer.</h2>
+      </div>
+    </div>
+    <div class="secondary piece">
+      <div class="piece-content">
         <p>
           So what is this course about?
         </p>
@@ -104,16 +112,9 @@
     </div>
     <div class="secondary piece">
       <div class="piece-content">
-        <h2 class="secondary">Who is "We"?</h2>
-        <p>
-          So what is this course about?
-        </p>
-        <ol>
-          <li>create a website</li>
-          <li>build a web application</li>
-          <li>earn a Frontend Developer Certificate</li>
-        </ol>
+        Hi, I'm David.
       </div>
+      <img src="https://avatars0.githubusercontent.com/u/2004131?v=3&s=460" />
     </div>
     <div class="primary piece footer">
       <div class="piece-content">
