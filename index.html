@@ -47,13 +47,11 @@
 
       .primary {
         background-color: #BF443A;
-        border-color: #BF443A;
         color: #FFFAFA;
       }
 
       .secondary {
         background-color: #FFFAFA;
-        border-color: #FFFAFA;
         color: #BF443A;
       }
 
@@ -66,22 +64,9 @@
         position: relative;
       }
 
-      .piece::before {
-        content: "";
-        display: block;
-        border-right-color: inherit;
-        border-right-style: solid;
-        border-right-width: calc(100vw - 4em);
-        border-left-color: inherit;
-        border-left-style: solid;
-        border-left-width: 4em;
-        border-bottom-color: inherit;
-        border-bottom-style: solid;
-        border-bottom-width: 1em;
-        border-top: 5vw solid transparent;
-        left: 0;
-        position: absolute;
-        top: -5vw;
+      .piece.secondary {
+        box-shadow: 0 0 15px rgba(0,0,0,0.5);
+        z-index: 1;
       }
 
       .piece-content {
