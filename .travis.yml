@@ -8,4 +8,4 @@ before_install:
 deploy:
   skip_cleanup: true
   provider: script
-  script: now -t $NOW_TOKEN
+  script: now -t $NOW_TOKEN && now alias -t $NOW_TOKEN
