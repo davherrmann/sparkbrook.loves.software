@@ -8,4 +8,4 @@ before_install:
 deploy:
   skip_cleanup: true
   provider: script
-  script: now -t $NOW_TOKEN -a sparkbrooklovessoftware
+  script: now -t $NOW_TOKEN
