@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - "node"
+cache: yarn
+
+deploy:
+  provider: script
+  script: 
+    - yarn global add now
+    - now -t $NOW_TOKEN -a sparkbrooklovessoftware
