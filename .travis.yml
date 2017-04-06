@@ -1,10 +1,8 @@
-language: node_js
-node_js:
-  - "node"
-cache: yarn
+language: generic
 
 deploy:
   provider: script
-  script: 
-    - yarn global add now
+  script:
+    - nvm install node
+    - npm install -g now
     - now -t $NOW_TOKEN -a sparkbrooklovessoftware
