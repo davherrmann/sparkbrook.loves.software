@@ -3,7 +3,6 @@ language: generic
 deploy:
   skip_cleanup: true
   provider: script
-  script:
-    - nvm install node
-    - npm install -g now
-    - now -t $NOW_TOKEN -a sparkbrooklovessoftware
+  script: nvm install node
+       && npm install -g now
+       && now -t $NOW_TOKEN -a sparkbrooklovessoftware
