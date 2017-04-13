@@ -94,6 +94,18 @@
         text-decoration: none;
       }
 
+      header > * + * {
+        margin-top: 1em;
+      }
+
+      header nav {
+        line-height: 1.5em;
+      }
+
+      header a {
+        display: block;
+      }
+
       /* Main content */
 
       article + article {
@@ -112,7 +124,7 @@
       </nav>
     </header>
     <main>
-      <article>
+      <article id="learn">
         <h2>learn.</h2>
         <p>
           Learn how to create beautiful, interactive websites. I will teach you to create online applications.<br>
@@ -121,13 +133,13 @@
           In the end, you will see results.
         </p>
       </article>
-      <article>
+      <article id="apply">
         <h2>apply.</h2>
         <p>
           It's not just theory. Apply all the gained knowledge in real-world applications.
         </p>
       </article>
-      <article>
+      <article id="share">
         <h2>share.</h2>
         <p>
           Share your progress with others. Help others and get help from others.
