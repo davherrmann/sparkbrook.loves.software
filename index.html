@@ -28,12 +28,18 @@
       /* global styles (body, fonts, margins) */
 
       body {
+        background-color: #FFFAFA;
+        color: #515151;
         font-family: "SF Mono", "Monaco", "Inconsolata", "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace;
         font-size: 16px;
       }
 
       p {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        color: #303030;
       }
 
       h1 {
@@ -48,18 +54,6 @@
       main,
       footer {
         padding: 1em;
-      }
-
-      /* Primary & secondary colors */
-
-      .primary {
-        background-color: #BF443A;
-        color: #FFFAFA;
-      }
-
-      .secondary {
-        background-color: #FFFAFA;
-        color: #000;
       }
 
       /* Move header & footer to the left on big screens */
@@ -85,6 +79,11 @@
       }
 
       /* Header */
+      header {
+        background-color: #BF443A;
+        color: #FFFAFA;
+      }
+
       header h1 {
         font-size: 2em;
       }
@@ -106,6 +105,12 @@
         display: block;
       }
 
+      /* Footer */
+      footer h2 {
+        font-size: 1rem;
+        font-weight: lighter;
+      }
+
       /* Main content */
 
       article + article {
@@ -114,8 +119,8 @@
 
     </style>
   </head>
-  <body lang="en" class="secondary">
-    <header class="primary">
+  <body lang="en">
+    <header>
       <h1>sparkbrook.<br>loves.<br>software.</h1>
       <nav>
         <a href="#learn">learn.</a>
@@ -147,7 +152,7 @@
       </article>
     </main>
     <footer>
-      Made with ♡ by David Herrmann
+      <h2>Made with ♡ by David Herrmann</h2>
     </footer>
   </body>
 </html>
