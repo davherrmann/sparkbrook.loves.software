@@ -25,7 +25,7 @@
         box-sizing: border-box;
       }
 
-      /* global styles (body, fonts, media queries) */
+      /* global styles (body, fonts, margins) */
 
       body {
         font-family: "SF Mono", "Monaco", "Inconsolata", "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace;
@@ -42,6 +42,12 @@
 
       h2 {
         font-size: 1.5em;
+      }
+
+      header,
+      main,
+      footer {
+        padding: 1em;
       }
 
       /* Primary & secondary colors */
@@ -78,14 +84,7 @@
         }
       }
 
-      /* Header & Footer */
-
-      header,
-      footer {
-        padding: 1em;
-        color: inherit;
-      }
-
+      /* Header */
       header h1 {
         font-size: 2em;
       }
@@ -96,10 +95,6 @@
       }
 
       /* Main content */
-
-      main {
-        padding: 1em;
-      }
 
       article + article {
         margin-top: 1.5em;
