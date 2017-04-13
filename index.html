@@ -124,6 +124,31 @@
         margin-bottom: 0.5em;
       }
 
+      article ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      article li {
+        padding-left: 1em;
+        position: relative;
+      }
+
+      article li::before {
+        background-color: #BF443A;
+        content: "";
+        display: inline-block;
+        height: 0.5em;
+        left: 0;
+        position: absolute;
+        top: 0.5em;
+        width: 0.5em;
+      }
+
+      article li + li {
+        margin-top: 0.5em;
+      }
+
     </style>
   </head>
   <body lang="en">
