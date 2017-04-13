@@ -27,11 +27,11 @@
 
       /* global styles (body, fonts, margins) */
 
-      body {
+      html {
         background-color: #FFF;
         color: #515151;
         font-family: "SF Mono", "Monaco", "Inconsolata", "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace;
-        font-size: 16px;
+        font-size: 20px;
         line-height: 1.5;
       }
 
@@ -43,43 +43,37 @@
         color: #303030;
       }
 
-      h1 {
-        font-size: 3em;
-      }
-
-      h2 {
-        font-size: 1.5em;
-      }
-
       header,
       main,
       footer {
-        padding: 2rem;
+        padding: 2rem 1rem;
       }
 
       /* Move header & footer to the left on big screens */
 
-      @media (min-width: 38em) {
-        body {
-          font-size: 20px;
-        }
-
+      @media (min-width: 58em) {
         header {
           bottom: 0;
           position: fixed;
           left: 0;
           top: 0;
-          width: 20rem;
+          width: 18rem;
         }
 
         header a {
           display: block;
         }
 
+        header,
         main,
         footer {
-          margin-left: 20rem;
-          width: calc(100% - 20rem);
+          padding: 2rem;
+        }
+
+        main,
+        footer {
+          margin-left: 18rem;
+          width: calc(100% - 18rem);
         }
       }
 
@@ -90,7 +84,7 @@
       }
 
       header h1 {
-        font-size: 2em;
+        font-size: 2.15em;
       }
 
       header * {
