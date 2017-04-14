@@ -109,11 +109,6 @@
         font-weight: lighter;
       }
 
-      footer strong {
-        color: #BF443A;
-        text-shadow: 0px 0px 2px #BF443A;
-      }
-
       /* Main content */
 
       article + article {
@@ -166,6 +161,22 @@
         text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff, 0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff, -0.12em 0 #fff, 0.15em 0 #fff, -0.15em 0 #fff;
       }
 
+      /* heart */
+
+      .heart {
+        animation: pulse 1s ease infinite;
+        fill: #BF443A;
+        height: 1em;
+        position: relative;
+        top: 0.1em;
+      }
+
+      @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.2); }
+        100% { transform: scale(1); }
+      }
+
     </style>
   </head>
   <body lang="en">
@@ -206,7 +217,10 @@
       </article>
     </main>
     <footer>
-      <h2>Made with <strong aria-label="love">♡</strong> by David Herrmann</h2>
+      <h2>Made with <svg aria-label="love" class="heart" viewBox="0 0 32 29.6">
+        <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+      	c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+      </svg> by David Herrmann</h2>
     </footer>
   </body>
 </html>
