@@ -177,6 +177,74 @@
         30% { transform: scale(1); }
       }
 
+      /* Form & inputs */
+
+      input {
+        border: 1px solid #BF443A;
+        font: inherit;
+        line-height: inherit;
+        padding: 0 0.5em;
+      }
+
+      header *:focus {
+        outline-color: white;
+      }
+
+      *:focus,
+      label > input[type="radio"]:focus + *::before {
+        outline: #BF443A auto 3px;
+      }
+
+      label > input {
+        display: block;
+      }
+
+      label > input[type="radio"] {
+        height: 0;
+        opacity: 0;
+        position: absolute;
+        width: 0;
+      }
+
+      label > input[type="radio"] + *::before {
+        border: 1px solid #BF443A;
+        content: "";
+        display: inline-block;
+        height: 1em;
+        margin-right: 0.25em;
+        vertical-align: text-bottom;
+        width: 1em;
+      }
+
+      label > input[type="radio"]:checked + *::before {
+        background-color: #BF443A;
+      }
+
+      form > * {
+        display: block;
+      }
+
+      form > * + * {
+        margin-top: 1em;
+      }
+
+      fieldset {
+        border: none;
+        padding: 0;
+      }
+
+      fieldset > legend {
+        padding: 0;
+      }
+
+      fieldset > * {
+        display: block
+      }
+
+      fieldset > label {
+        cursor: pointer;
+      }
+
     </style>
   </head>
   <body lang="en">
@@ -214,6 +282,37 @@
         <p>
           Share your progress with others. Help others and get help from others.
         </p>
+      </article>
+      <article id="signup">
+        <h2>sign me up.</h2>
+        <p>
+          Are you interested? Excited? You can either sign up, come to the intro evening or contact me for more details.
+        </p>
+        <form>
+          <label>
+            Name
+            <input type="text" placeholder="..." />
+          </label>
+          <label>
+            Mobile Number
+            <input type="tel" placeholder="..." />
+          </label>
+          <fieldset>
+            <legend>What date would you prefer?</legend>
+            <label>
+              <input type="radio" name="date" value="wednesday" />
+              <span>Wednesday evenings</span>
+            </label>
+            <label>
+              <input type="radio" name="date" value="wednesday" />
+              <span>Saturday mornings</span>
+            </label>
+            <label>
+              <input type="radio" name="date" value="wednesday" />
+              <span>Friday evenings</span>
+            </label>
+          </fieldset>
+        </form>
       </article>
     </main>
     <footer>
