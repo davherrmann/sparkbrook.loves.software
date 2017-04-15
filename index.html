@@ -192,15 +192,6 @@
         padding: 0 0.5em;
       }
 
-      header *:focus {
-        outline-color: white;
-      }
-
-      *:focus,
-      label > input[type="radio"]:focus + *::before {
-        outline: #BF443A auto 3px;
-      }
-
       label > input {
         display: block;
         width: 15em;
@@ -252,10 +243,28 @@
         cursor: pointer;
       }
 
+      /* Focus styling */
+      *:focus,
+      label > input[type="radio"]:focus + *::before {
+        outline: #BF443A auto 3px;
+        outline-offset: 0.01em;
+      }
+
+      /* Primary elements: colors */
+
+      *[primary] {
+        background-color: #BF443A;
+        color: white;
+      }
+
+      *[primary] *:focus {
+        outline-color: white;
+      }
+
     </style>
   </head>
   <body lang="en">
-    <header>
+    <header primary>
       <h1>sparkbrook.<br>loves.<br>software.</h1>
       <nav>
         <a href="#learn">learn.</a>
@@ -319,7 +328,7 @@
               <span>Friday evenings</span>
             </label>
           </fieldset>
-          <button type="submit">Submit.</button>
+          <button primary type="submit">Submit.</button>
         </form>
       </article>
     </main>
