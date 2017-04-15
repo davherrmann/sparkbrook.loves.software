@@ -23,6 +23,7 @@
       * {
         margin: 0;
         box-sizing: border-box;
+        outline: 0;
       }
 
       /* global styles (body, fonts, margins) */
@@ -201,6 +202,7 @@
 
       label > input[type="radio"] + *::before {
         border: 1px solid #BF443A;
+        border-radius: 50%;
         content: "";
         display: inline-block;
         height: 1em;
@@ -241,8 +243,11 @@
       /* Focus styling */
       *:focus,
       label > input[type="radio"]:focus + *::before {
-        outline: #BF443A auto 3px;
-        outline-offset: 0.01em;
+        box-shadow: 0.5px 0.5px 0.5px 0.5px white,
+                    0.5px -0.5px 0.5px 0.5px white,
+                    -0.5px 0.5px 0.5px 0.5px white,
+                    -0.5px -0.5px 0.5px 0.5px white,
+                    0 0 3px 2px #BF443A;
       }
 
       /* Primary elements: colors */
@@ -253,7 +258,11 @@
       }
 
       *[primary] *:focus {
-        outline-color: white;
+        box-shadow: 0.5px 0.5px 0.5px 0.5px #BF443A,
+                    0.5px -0.5px 0.5px 0.5px #BF443A,
+                    -0.5px 0.5px 0.5px 0.5px #BF443A,
+                    -0.5px -0.5px 0.5px 0.5px #BF443A,
+                    0 0 2px 2px white;
       }
 
     </style>
