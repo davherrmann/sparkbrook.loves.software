@@ -256,12 +256,12 @@
 
       /* Primary elements: colors */
 
-      *[primary] {
+      .primary {
         background-color: #BF443A;
         color: white;
       }
 
-      *[primary] *:focus {
+      .primary *:focus {
         box-shadow: 0.5px 0.5px 0.5px 0.5px #BF443A,
                     0.5px -0.5px 0.5px 0.5px #BF443A,
                     -0.5px 0.5px 0.5px 0.5px #BF443A,
@@ -269,7 +269,7 @@
                     0 0 2px 2px white;
       }
 
-      *[primary] * {
+      .primary * {
         color: white;
         fill: white;
       }
@@ -284,7 +284,7 @@
     </style>
   </head>
   <body lang="en">
-    <header primary>
+    <header class="primary">
       <h1>
         <a href="/">
           sparkbrook.<br>loves.<br>software.
@@ -356,7 +356,7 @@
               <span>Friday evenings</span>
             </label>
           </fieldset>
-          <button primary type="submit">Submit.</button>
+          <button class="primary" type="submit">Submit.</button>
         </form>
       </article>
     </main>
