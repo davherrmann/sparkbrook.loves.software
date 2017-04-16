@@ -196,15 +196,24 @@
         width: 0;
       }
 
+      label > input[type="radio"] + * {
+        line-height: 2;
+        padding-left: 1.75em;
+        position: relative;
+      }
+
       label > input[type="radio"] + *::before {
         border: 1px solid #BF443A;
         border-radius: 50%;
         content: "";
         display: inline-block;
-        height: 1em;
-        margin-right: 0.5em;
+        height: 1.2em;
+        left: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
         vertical-align: text-bottom;
-        width: 1em;
+        width: 1.2em;
       }
 
       label > input[type="radio"]:checked + *::before {
