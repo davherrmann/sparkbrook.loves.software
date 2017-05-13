@@ -142,8 +142,13 @@
         color: #303030;
       }
 
+      textarea {
+        resize: vertical;
+      }
+
       input,
-      button {
+      button,
+      textarea {
         background: inherit;
         border: 1px solid #BF443A;
         font: inherit;
@@ -151,7 +156,8 @@
         padding: 0 0.5em;
       }
 
-      label > input {
+      label > input,
+      label > textarea {
         display: block;
         width: 100%;
       }
@@ -249,10 +255,24 @@
         padding: 0.25em 1em;
       }
 
+      /* Info block */
+
+      .info {
+        margin: 1em;
+        margin-left: -1em;
+        margin-right: -1em;
+        padding: 1em;
+      }
+
+      .info > * {
+        display: block;
+      }
+
       /* Media queries */
 
       @media (min-width: 28em) {
-        label > input {
+        label > input,
+        label > textarea {
           width: 20.5em;
         }
       }
@@ -347,8 +367,14 @@
       <article id="signup">
         <h2>sign me up.</h2>
         <p>
-          Are you interested? Excited? You can either sign up, come to the intro evening or contact me for more details.
+          Are you interested? Excited? You are very welcome to join us!
         </p>
+        <section class="info primary">
+          <span>Next course: June 15th - July 1st, each Saturday from 9 to 11am</span>
+          <span>Requirements: Laptop</span>
+          <span>Next registration date: Saturday, 15th of June</span>
+          <span>4 Blenheim Avenue, Back of 155 Ombersley Road</span>
+        </section>
         <form>
           <label>
             Name
@@ -362,19 +388,18 @@
             Mobile Number
             <input type="tel" name="mobile" placeholder="..." />
           </label>
+          <label>
+            Comments
+            <textarea rows=5 placeholder="..."></textarea>
+          </label>
           <fieldset>
-            <legend>What date would you prefer?</legend>
             <label>
-              <input type="radio" name="date" value="wednesday" />
-              <span>Wednesday evenings</span>
+              <input type="radio" name="date" value="registration" />
+              <span>I will come to the registration.</span>
             </label>
             <label>
-              <input type="radio" name="date" value="wednesday" />
-              <span>Saturday mornings</span>
-            </label>
-            <label>
-              <input type="radio" name="date" value="wednesday" />
-              <span>Friday evenings</span>
+              <input type="radio" name="date" value="otherday" />
+              <span>I can't come on Saturdays, but would still like to join you.</span>
             </label>
           </fieldset>
           <button class="primary" type="submit">Submit.</button>
