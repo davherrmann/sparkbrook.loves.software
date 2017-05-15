@@ -259,26 +259,30 @@
       /* Info block */
 
       .info {
+        align-items: center;
         border: 0.1em solid #BF443A;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
         margin: 1em;
         margin-left: -1em;
         margin-right: -1em;
       }
 
-      .info > * {
-        display: block;
-        padding: 0 0.9rem;
-      }
-
       .info > *:first-child {
-        color: white;
         background-color: #BF443A;
-        margin-bottom: 0.5rem;
+        color: white;
+        flex-basis: 100%;
         padding: 0.5rem 0.9rem;
       }
 
-      .info > *:last-child {
-        margin-bottom: 0.5rem;
+      .info > *:nth-child(2) {
+        padding-left: 0.9rem;
+      }
+
+      .info > img {
+        width: 250px;
+        height: auto;
       }
 
       /* Media queries */
@@ -378,9 +382,12 @@
         </p>
         <section class="info">
           <span>Next course: June 15th - July 1st, each Saturday from 9 to 11am</span>
-          <span>Requirements: Laptop</span>
-          <span>Next registration date: Saturday, 15th of June</span>
-          <span>4 Blenheim Avenue, Back of 155 Ombersley Road</span>
+          <ul>
+            <li>Requirements: Laptop</li>
+            <li>Next registration date: Saturday, 15th of June</li>
+            <li>4 Blenheim Avenue, Back of 155 Ombersley Road</li>
+          </ul>
+          <img src="https://maps.googleapis.com/maps/api/staticmap?center=52.4588214,-1.8783737&zoom=18&size=400x300&markers=52.4588214,-1.8783737&scale=2&key=AIzaSyCc5FgnDxx2RN4B35gwFh2RCBx2p00b2Vo" />
         </section>
         <form>
           <label>
