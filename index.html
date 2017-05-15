@@ -51,12 +51,6 @@
       }
 
       /* Header */
-      header {
-        border: 0.25em solid #BF443A;
-        border-left: 0;
-        border-right: 0;
-      }
-
       header h1 {
         font-size: 2.15em;
       }
@@ -265,22 +259,26 @@
       /* Info block */
 
       .info {
+        border: 0.1em solid #BF443A;
         margin: 1em;
         margin-left: -1em;
         margin-right: -1em;
-        padding: 1em;
       }
 
       .info > * {
         display: block;
+        padding: 0 0.9rem;
       }
 
-      /* Promoted block */
+      .info > *:first-child {
+        color: white;
+        background-color: #BF443A;
+        margin-bottom: 0.5rem;
+        padding: 0.5rem 0.9rem;
+      }
 
-      .promote {
-        background: url(https://images.unsplash.com/photo-1454165205744-3b78555e5572?dpr=2&auto=compress,format&fit=crop&w=376&h=251&q=80&cs=tinysrgb&crop=&bg=);
-        background-size: cover;
-        box-shadow: 0px -2000px rgba(0, 0, 0, 0.58) inset;
+      .info > *:last-child {
+        margin-bottom: 0.5rem;
       }
 
       /* Media queries */
@@ -329,7 +327,7 @@
     </style>
   </head>
   <body>
-    <header class="primary promote">
+    <header class="primary">
       <h1>
         <a href="/">
           sparkbrook.<br>loves.<br>software.
@@ -378,7 +376,7 @@
         <p>
           Are you interested? Excited? You are very welcome to join us!
         </p>
-        <section class="info primary promote">
+        <section class="info">
           <span>Next course: June 15th - July 1st, each Saturday from 9 to 11am</span>
           <span>Requirements: Laptop</span>
           <span>Next registration date: Saturday, 15th of June</span>
