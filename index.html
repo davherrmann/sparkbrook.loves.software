@@ -392,6 +392,16 @@
         </a>
       </div>
       <form>
+        <fieldset>
+          <label>
+            <input type="radio" name="date" value="registration" />
+            <span>I will come to the registration.</span>
+          </label>
+          <label>
+            <input type="radio" name="date" value="otherday" />
+            <span>I can't come on Saturdays, but would still like to join a course.</span>
+          </label>
+        </fieldset>
         <label>
           Name
           <input type="text" name="name" placeholder="..." />
@@ -408,16 +418,6 @@
           Comments
           <textarea rows=5 placeholder="..."></textarea>
         </label>
-        <fieldset>
-          <label>
-            <input type="radio" name="date" value="registration" />
-            <span>I will come to the registration.</span>
-          </label>
-          <label>
-            <input type="radio" name="date" value="otherday" />
-            <span>I can't come on Saturdays, but would still like to join a course.</span>
-          </label>
-        </fieldset>
         <button class="primary" type="submit">Submit.</button>
       </form>
     </section>
