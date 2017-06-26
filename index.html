@@ -15,7 +15,6 @@
     <meta name="application-name" content="SPARKBROOK ♡ SOFTWARE">
     <meta name="theme-color" content="#0aae88">
 
-    <base href="https://sparkbrook.loves.software/">
     <title>SPARKBROOK ♡ SOFTWARE</title>
 
     <style>
@@ -78,6 +77,28 @@
         margin-top: 1em;
       }
 
+      header::after {
+        background-image: url(david.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+        box-shadow: inset 1px 1px 2px 2px rgba(0, 0, 0, 0.33);
+        content: '';
+        display: block;
+        float: right;
+        height: 4em;
+        margin-right: 1rem;
+        position: relative;
+        width: 4em;
+      }
+
+      @media (min-width: 38em) {
+        header::after {
+          height: 8em;
+          transform: translateY(-2rem);
+          width: 8em;
+        }
+      }
       /* Footer */
       footer {
         padding-bottom: 2rem;
@@ -345,7 +366,7 @@
     <section id="learn">
       <h2>learn.</h2>
       <p>
-        Learning should be fun. And it can be.
+        Learning should be fun. And it can be. No previous knowledge required :)
       </p>
       <ul>
         <li>Create a simple website with HTML &amp; CSS</li>
@@ -391,7 +412,7 @@
           <img src="https://maps.googleapis.com/maps/api/staticmap?center=52.4588214,-1.8783737&zoom=18&size=400x300&markers=52.4588214,-1.8783737&scale=2&key=AIzaSyCc5FgnDxx2RN4B35gwFh2RCBx2p00b2Vo" />
         </a>
       </div>
-      <form>
+      <form action="https://formspree.io/david@loves.software" method="POST">
         <fieldset>
           <label>
             <input type="radio" name="date" value="registration" />
@@ -411,12 +432,12 @@
           <input type="email" name="email" placeholder="..." />
         </label>
         <label>
-          Mobile Number
+          Mobile
           <input type="tel" name="mobile" placeholder="..." />
         </label>
         <label>
           Comments
-          <textarea rows=5 placeholder="..."></textarea>
+          <textarea name="comments" rows=5 placeholder="..."></textarea>
         </label>
         <button class="primary" type="submit">Submit.</button>
       </form>
